@@ -183,6 +183,44 @@ You can use any LLM model supported by LangChain by adding the appropriate envir
 hatch build
 ```
 
+## Installation
+
+This is a Python package that can be installed via pip:
+
+```bash
+pip install browser-use
+```
+
+## Local Development
+
+To set up the development environment:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/CodePhyt/browser-use.git
+   cd browser-use
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -e .
+   ```
+
+3. Run tests:
+   ```bash
+   pytest
+   ```
+
+## Usage
+
+```python
+from browser_use import BrowserAgent
+
+agent = BrowserAgent()
+result = agent.browse("https://example.com")
+print(result)
+```
+
 Feel free to join the [Discord](https://link.browser-use.com/discord) for discussions and support.
 
 ---
