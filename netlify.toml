@@ -1,16 +1,10 @@
 [build]
-  command = """
-    python -m pip install --upgrade pip setuptools wheel &&
-    pip install -e . &&
-    python setup.py sdist bdist_wheel
-  """
+  base = ""
   publish = "dist"
-  functions = "netlify/functions"
+  command = "pip install -r requirements.txt && python setup.py sdist bdist_wheel"
 
 [build.environment]
-  PYTHON_VERSION = "3.9"
-  PIP_NO_CACHE_DIR = "off"
-  PIP_DISABLE_PIP_VERSION_CHECK = "1"
+  PYTHON_VERSION = "3.8"
 
 [[redirects]]
   from = "/*"
