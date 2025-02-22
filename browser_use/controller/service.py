@@ -1,6 +1,6 @@
 import logging
 
-from main_content_extractor import MainContentExtractor
+from browser_use.dom.main_content_extractor import MainContentExtractor
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 
