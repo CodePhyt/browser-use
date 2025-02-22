@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="browser-use",
-    version="0.1.1",  # Incrementing version for new release
+    version="0.1.2",  # Incrementing version for import fix
     packages=find_packages(),
     include_package_data=True,
     install_requires=[
