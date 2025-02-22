@@ -1,10 +1,10 @@
-# 🌐 Browser Use
+# Browser Use
 
-Make websites accessible for AI agents 🤖.
+Make websites accessible for AI agents .
 
 [![GitHub stars](https://img.shields.io/github/stars/gregpr07/browser-use?style=social)](https://github.com/gregpr07/browser-use/stargazers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Discord](https://img.shields.io/discord/1303749220842340412?color=7289DA&label=Discord&logo=discord&logoColor=white)](https://link.browser-use.com/discord)
 
 Browser use is the easiest way to connect your AI agents with the browser. If you have used Browser Use for your project feel free to show it off in our [Discord](https://link.browser-use.com/discord).
@@ -54,7 +54,7 @@ ANTHROPIC_API_KEY=
     <p><i>Prompt: Search the top 3 AI companies 2024 and find what out what concrete hardware each is using for their model. (1x speed)</i></p>
 </div>
 
-# Features ⭐
+# Features 
 
 - Vision + html extraction
 - Automatic multi-tab management
@@ -188,6 +188,6 @@ Feel free to join the [Discord](https://link.browser-use.com/discord) for discus
 ---
 
 <div align="center">
-  <b>Star ⭐ this repo if you find it useful!</b><br>
-  Made with ❤️ by the Browser-Use team
+  <b>Star  this repo if you find it useful!</b><br>
+  Made with  by the Browser-Use team
 </div>
