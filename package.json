@@ -1,0 +1,12 @@
+{
+  "name": "browser-use",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": "16.x",
+    "python": "3.8.12"
+  },
+  "scripts": {
+    "build": "python3.8 setup.py sdist bdist_wheel"
+  }
+}
