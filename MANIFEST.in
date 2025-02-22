@@ -1,0 +1,7 @@
+include LICENSE
+include README.md
+include requirements.txt
+include runtime.txt
+recursive-include browser_use/i18n *.json
+recursive-include browser_use/static *
+recursive-include browser_use/templates *
