@@ -1,9 +1,15 @@
 [build]
   publish = "dist"
-  command = "python -m pip install --upgrade pip setuptools wheel && python -m pip install -r requirements.txt && python setup.py sdist bdist_wheel"
+  command = """
+    mise use python@3.8 &&
+    python -m pip install --upgrade pip setuptools wheel &&
+    python -m pip install -r requirements.txt &&
+    python setup.py sdist bdist_wheel
+  """
 
 [build.environment]
-  PYTHON_VERSION = "3.8.0"
+  PYTHON_VERSION = "3.8"
+  MISE_PYTHON_COMPILE = "false"
   PIP_DISABLE_PIP_VERSION_CHECK = "1"
 
 [[redirects]]
