@@ -23,6 +23,8 @@ jobs:
     environment:
       name: pypi
       url: https://pypi.org/p/browser-use
+    permissions:
+      id-token: write
     
     steps:
     - uses: actions/checkout@v4
@@ -35,7 +37,6 @@ jobs:
         python-version: "3.8"
         architecture: "x64"
         cache: "pip"
-        check-latest: true
     
     - name: Install dependencies
       run: |
@@ -51,7 +52,7 @@ jobs:
     
     - name: Publish to PyPI
       if: github.event_name == 'release' && github.event.action == 'published'
-      env:
-        TWINE_USERNAME: __token__
-        TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
-      run: twine upload --skip-existing dist/*
+      uses: pypa/gh-action-pypi-publish@release/v1
+      with:
+        password: ${{ secrets.PYPI_API_TOKEN }}
+        verbose: true
