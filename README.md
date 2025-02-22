@@ -126,6 +126,29 @@ We collect anonymous usage data to help us understand how the library is being u
 
 You can opt out of telemetry by setting the `ANONYMIZED_TELEMETRY=false` environment variable.
 
+## Deployment
+
+### Deploying to Netlify
+
+1. Fork this repository to your GitHub account
+2. Sign up for Netlify (if you haven't already)
+3. Create a new site from Git in Netlify
+4. Connect your GitHub account and select this repository
+5. Configure the build settings:
+   - Build command: `pip install -r requirements.txt && python setup.py build`
+   - Publish directory: `dist`
+6. Click "Deploy site"
+
+### Language Support
+
+The application supports the following languages:
+- English (en)
+- German (de)
+- Russian (ru)
+- Turkish (tr)
+
+To change the language, use the language selector in the settings menu.
+
 # Contributing
 
 Contributions are welcome! Feel free to open issues for bugs or feature requests.
