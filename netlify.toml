@@ -1,9 +1,9 @@
 [build]
   publish = "dist"
-  command = "bash ./build.sh"
+  command = "python -m pip install --upgrade pip setuptools wheel && python -m pip install -r requirements.txt && python setup.py sdist bdist_wheel"
 
 [build.environment]
-  PYTHON_VERSION = "3.8.12"
+  PYTHON_VERSION = "3.8.0"
   PIP_DISABLE_PIP_VERSION_CHECK = "1"
 
 [[redirects]]
